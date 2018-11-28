@@ -1,0 +1,13 @@
+﻿<meta charset="UTF-8">
+<script>
+    var vklad = +prompt('Сумма вклада:');
+    var stavka = +prompt('Процентная ставка:');
+    var years = +prompt('Период в годах:');
+
+    for (var i = 1; i <= years; i++) {
+        vklad = vklad + (vklad / 100 * stavka);
+        alert('Сумма вклада составит: ' + vklad);
+    }
+    alert('Спасибо!');
+
+</script>
